@@ -198,8 +198,13 @@ trove_classifiers=[
     ]
 
 
-GIT_VERSION_BODY = '''
-# This _version.py is generated from git metadata by the tahoe setup.py.
+GIT_VERSION_BODY = '''\
+"""
+This _version.py is generated from git metadata by the tahoe setup.py.
+
+Ported to Python 3.
+"""
+from __future__ import unicode_literals
 
 __pkgname__ = "%(pkgname)s"
 real_version = "%(version)s"
